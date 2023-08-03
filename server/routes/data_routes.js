@@ -14,7 +14,13 @@ const dataController = require("../controllers/data_controllers");
  *         content:
  *           application/json:
  *             example:
- *               fuentes: [fuentes1, fuentes2, fuentes3]
+ *               - name: Fountain 1
+ *                 coordinates: lat1, lng1
+ *                 transporte: Metro
+ *                 barrio: Neighborhood 1
+ *                 coordenada_x: Coordenada X 1
+ *                 coordenada_y: Coordenada Y 1
+ *                 latitud: Latitud 1
  */
 
 /**
@@ -29,22 +35,13 @@ const dataController = require("../controllers/data_controllers");
  *         content:
  *           application/json:
  *             example:
- *               museos: [museo1, museo2, museo3]
- */
-
-/**
- * @swagger
- * /api/oficinas-turismo:
- *   get:
- *     summary: Get oficinas-turismo data
- *     description: Retrieve oficinas-turismo data
- *     responses:
- *       200:
- *         description: Successful response
- *         content:
- *           application/json:
- *             example:
- *               oficinasTurismo: [oficina1, oficina2, oficina3]
+ *               - name: Museum 1
+ *                 coordinates: lat1, lng1
+ *                 transporte: Bus
+ *                 barrio: Neighborhood 2
+ *                 coordenada_x: Coordenada X 2
+ *                 coordenada_y: Coordenada Y 2
+ *                 latitud: Latitud 2
  */
 
 /**
@@ -59,7 +56,13 @@ const dataController = require("../controllers/data_controllers");
  *         content:
  *           application/json:
  *             example:
- *               piscinas: [piscina1, piscina2, piscina3]
+ *               - name: Pool 1
+ *                 coordinates: lat1, lng1
+ *                 transporte: Tram
+ *                 barrio: Neighborhood 3
+ *                 coordenada_x: Coordenada X 3
+ *                 coordenada_y: Coordenada Y 3
+ *                 latitud: Latitud 3
  */
 
 /**
@@ -74,12 +77,17 @@ const dataController = require("../controllers/data_controllers");
  *         content:
  *           application/json:
  *             example:
- *               zonasVerdes: [zonaVerde1, zonaVerde2, zonaVerde3]
+ *               - name: Green Zone 1
+ *                 coordinates: lat1, lng1
+ *                 transporte: Train
+ *                 barrio: Neighborhood 4
+ *                 coordenada_x: Coordenada X 4
+ *                 coordenada_y: Coordenada Y 4
+ *                 latitud: Latitud 4
  */
 
 dataRouter.get("/fuentes", dataController.getFuentes);
 dataRouter.get("/museos", dataController.getMuseos);
-dataRouter.get("/oficinas-turismo", dataController.getOficinas);
 dataRouter.get("/piscinas", dataController.getPiscinas);
 dataRouter.get("/zonas-verdes", dataController.getZonasVerdes);
 
