@@ -10,7 +10,6 @@ const session = require("express-session");
 const passport = require("passport");
 var cors = require("cors");
 const helmet = require("helmet");
-
 const allowedOrigins = ["http://localhost:5173"];
 
 app.use(
@@ -28,13 +27,41 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(helmet());
 
-//Rutas API
+// Swagger setup
+const swaggerJSDoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
+
+const swaggerOptions = {
+  swaggerDefinition: {
+    openapi: "3.0.0",
+    info: {
+      title: "server",
+      version: "1.0.0",
+      description: "Documentation for api",
+    },
+    servers: [
+      {
+        url: `http://localhost:${port}`,
+        description: "Development server",
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
+
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
+
+// Serve Swagger UI
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+// Rutas API
 app.use("/api", router);
 app.use("/auth", authRoutes);
 
 // Errores
 app.use(error404);
 
+// Start the server
 app.listen(port, () => {
   console.log(
     `Servidor funcionando en el puerto ${port} http://localhost:${port}`
