@@ -29,3 +29,7 @@ Backend : JWT, MongoDB, BCrypt Hash, Passport
 
 ## Algunas Vistas De Applicacion
 ![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/fadd0ed6-e1ee-4656-a0aa-8f4ad38b29e7)
+![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/ecc0f5eb-b7f9-466a-9327-6f6caaaf65e5)
+![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/cfe92232-4aa4-4d8f-b18b-99d638a095bf)
+![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/72d863a5-d66f-45e8-89cc-985e6393467f)
+![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/a9db85fa-f786-4e72-972c-ab9ffa10c117)
