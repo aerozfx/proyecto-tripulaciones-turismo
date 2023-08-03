@@ -25,6 +25,7 @@ El mapa está enriquecido con cinco puntos de interés predefinidos, marcados co
 El proyecto fue desarrollado utilizando una combinación de tecnologías modernas, incluyendo:
 
 Frontend: React, Axios, Google Maps Platform, Sass, Api's
+
 Backend : JWT, MongoDB, BCrypt Hash, Passport
 
 ## Algunas Vistas De Applicacion
