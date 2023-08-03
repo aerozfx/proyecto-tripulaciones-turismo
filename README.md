@@ -34,3 +34,10 @@ Backend : JWT, MongoDB, BCrypt Hash, Passport
 ![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/cfe92232-4aa4-4d8f-b18b-99d638a095bf)
 ![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/72d863a5-d66f-45e8-89cc-985e6393467f)
 ![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/a9db85fa-f786-4e72-972c-ab9ffa10c117)
+
+## Conclusión
+
+El Proyecto de Tripulaciones es el resultado del arduo trabajo y la colaboración entre un grupo de amigos apasionados por la tecnología.Si tienes sugerencias para mejorar la aplicación, nuevas características que te gustaría ver implementadas o si has encontrado algún problema, no dudes en contactarnos.
+
+
+
