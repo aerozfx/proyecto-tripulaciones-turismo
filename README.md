@@ -28,3 +28,4 @@ Frontend: React, Axios, Google Maps Platform, Sass, Api's
 Backend : JWT, MongoDB, BCrypt Hash, Passport
 
 ## Algunas Vistas De Applicacion
+![image](https://github.com/aerozfx/proyecto-tripulaciones-turismo/assets/131137572/fadd0ed6-e1ee-4656-a0aa-8f4ad38b29e7)
