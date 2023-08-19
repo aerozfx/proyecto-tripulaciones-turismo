@@ -28,7 +28,6 @@ function App() {
   const updateUserPosition = ({lat, lng}) => setUserPosition({lat, lng})
   const updateDestination = ({lat, lng}) => setDestination({lat, lng})
   const updateFilters = (newFilter, mode) => {
-    console.log(newFilter)
     if(mode === "remove"){
       setFilters(newFilter)
     } else {

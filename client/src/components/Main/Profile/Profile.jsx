@@ -43,7 +43,6 @@ const Profile = () => {
           console.log(user_id); 
           const response = await axios.get(`/api/users/${user_id}`) 
           if (response.data) {
-            console.log(response.data.message);
             setUserInfo({
               name: response.data.message.name,
               email: response.data.message.email
@@ -70,7 +69,6 @@ const Profile = () => {
       <section className="profile-header">
         <FaUserCircle className="profile-picture"/> 
         <article className="profile-info">
-        {console.log("UserInfo:", userInfo)}
           <p className="profile-name">{loading ? "Cargando..." : "Hola, " + userInfo.name}</p>
           <p className="profile-email">{loading ? "Cargando..." : userInfo.email}</p>
         </article>

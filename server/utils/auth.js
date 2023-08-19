@@ -7,8 +7,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL:
-        "https://dcwqpn8sih.eu-west-1.awsapprunner.com/auth/google/callback",
+      callbackURL: "http://localhost:3000/auth/google/callback",
       proxy: true,
     },
     function (request, accessToken, refreshToken, profile, done) {

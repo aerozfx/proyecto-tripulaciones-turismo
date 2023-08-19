@@ -47,7 +47,7 @@ const checkEmailLogIn = async (req, res) => {
       return res.status(401).json({ msj: "Incorrect password" });
     }
     const payload = {
-      user_id: user.dataValues.userId
+      user_id: user.dataValues.userId,
     };
     const token = jwt.sign(payload, "secret_password", {
       expiresIn: "7d",
@@ -84,7 +84,7 @@ const googleLogin = (req, res) => {
       httpOnly: true,
       sameSite: "lax",
     })
-    .redirect("https://eyh53wm8p8.eu-west-1.awsapprunner.com/home");
+    .redirect("http://localhost:5173/home");
 };
 
 module.exports = {
